@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/edTMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edTSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="subject"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edTMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="message"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edTSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="signature"
+        android:ems="10" />
+
+    <ImageButton
+        android:id="@+id/imBtnImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/attachment" />
+
+    <Button
+        android:id="@+id/btnSendMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send email" />
+    
+</LinearLayout>
+
